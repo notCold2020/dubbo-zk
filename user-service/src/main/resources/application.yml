@@ -1,0 +1,19 @@
+spring:
+  application:
+    #给服务提供方起个名字（接口实现类
+    name: dubbo-auto-configuration-provider-demo
+dubbo:
+  scan:
+    #接口实现类 扫描哪个包下的类 作为服务提供者 需要@Service()
+    #也就是这个包下的@Service注解才会生效
+    base-packages: com.xdclass.user.service.impl
+  #协议 用dubbo协议在12345端口暴露服务 还有redis协议
+  protocol:
+    name: dubbo
+    port: 12345
+  registry:
+    #不在zk上注册服务
+    address: N/A
+  #下面这个不配置也行 如果上面配置了 下面这个没有也罢
+  application:
+    name: dubbo-auto-configuration-provider-demo

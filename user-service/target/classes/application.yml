@@ -1,0 +1,14 @@
+spring:
+  application:
+    #给接口提供方起个名字
+    name: dubbo-auto-configuration-provider-demo
+
+dubbo:
+  scan:
+    #接口实现类
+    base-packages: com.xdclass.user.service.impl
+  protocol:
+    name: dubbo
+    port: 12345
+  registry:
+    address: N/A
