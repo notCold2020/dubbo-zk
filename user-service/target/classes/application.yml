@@ -5,7 +5,7 @@ spring:
 dubbo:
   scan:
     #接口实现类 扫描哪个包下的类 作为服务提供者 需要@Service()
-    #也就是这个包下的@Service注解才会生效
+    #也就是这个包下的@Service注解才会生效 看仔细呀！
     base-packages: com.xdclass.user.service.impl
   #协议 用dubbo协议在12345端口暴露服务 还有redis协议
   protocol:
